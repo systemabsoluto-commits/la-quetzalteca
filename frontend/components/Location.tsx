@@ -66,7 +66,7 @@ const Location: React.FC = () => {
           <div className="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
             {/* Using a placeholder image for the storefront/map area */}
             <img 
-              src="/images/3.png" 
+              src="/la-quetzalteca/images/3.png" 
               alt="Fachada de La Quetzalteca" 
               className="w-full h-full object-cover"
             />

@@ -50,14 +50,14 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 't1',
     name: 'Tortillas de Maíz',
     description: 'Paquete de tortillas de maíz calientitas, hechas al instante.',
-    imageUrl: '/images/4.png',
+    imageUrl: '/la-quetzalteca/images/4.png',
     category: 'tortillas'
   },
   {
     id: 't2',
     name: 'Tortillas de Harina',
     description: 'Suaves y perfectas para burritos o quesadillas.',
-    imageUrl: '/images/5.png',
+    imageUrl: '/la-quetzalteca/images/5.png',
     category: 'tortillas'
   },
   // Panaderia
@@ -65,21 +65,21 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 'p1',
     name: 'Conchas Tradicionales',
     description: 'Esponjosas conchas de vainilla y chocolate.',
-    imageUrl: '/images/6.png',
+    imageUrl: '/la-quetzalteca/images/6.png',
     category: 'panaderia'
   },
   {
     id: 'p2',
     name: 'Pan Francés',
     description: 'Crujiente por fuera, suave por dentro. Ideal para acompañar.',
-    imageUrl: '/images/7.png',
+    imageUrl: '/la-quetzalteca/images/7.png',
     category: 'panaderia'
   },
   {
     id: 'p3',
     name: 'Cuernitos',
     description: 'Pan dulce en forma de cuerno, perfecto con café.',
-    imageUrl: '/images/8.png',
+    imageUrl: '/la-quetzalteca/images/8.png',
     category: 'panaderia'
   },
   // Carniceria
@@ -87,14 +87,14 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 'c1',
     name: 'Carne Asada Marinada',
     description: 'Nuestra receta secreta, lista para la parrilla.',
-    imageUrl: '/images/9.png',
+    imageUrl: '/la-quetzalteca/images/9.png',
     category: 'carniceria'
   },
   {
     id: 'c2',
     name: 'Pollo Preparado',
     description: 'Pollo fresco marinado con especias tradicionales.',
-    imageUrl: '/images/10.png',
+    imageUrl: '/la-quetzalteca/images/10.png',
     category: 'carniceria'
   },
   // Snacks
@@ -102,21 +102,21 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 's1',
     name: 'Mangonada Clásica',
     description: 'Mango fresco, chamoy, tajín y banderilla de tamarindo.',
-    imageUrl: '/images/11.png',
+    imageUrl: '/la-quetzalteca/images/11.png',
     category: 'snacks'
   },
   {
     id: 's2',
     name: 'Fresas con Crema',
     description: 'Fresas frescas bañadas en nuestra crema dulce especial.',
-    imageUrl: '/images/12.png',
+    imageUrl: '/la-quetzalteca/images/12.png',
     category: 'snacks'
   },
   {
     id: 's3',
     name: 'Aguas Frescas',
     description: 'Horchata, Jamaica, Tamarindo y sabores de temporada.',
-    imageUrl: '/images/12.png',
+    imageUrl: '/la-quetzalteca/images/12.png',
     category: 'snacks'
   }
 ];

@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/images/2.png" 
+          src="/la-quetzalteca/images/2.png" 
           alt="Comida tradicional de La Quetzalteca"
           className="w-full h-full object-cover object-center"
         />

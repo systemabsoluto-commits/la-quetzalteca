@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
-            <img src="/images/1.png" alt="La Quetzalteca Logo" className="w-10 h-10 rounded-full object-cover" />
+            <img src="/la-quetzalteca/images/1.png" alt="La Quetzalteca Logo" className="w-10 h-10 rounded-full object-cover" />
             <span className={`font-display font-bold text-2xl tracking-tight ${isScrolled ? 'text-brand-900' : 'text-white'}`}>
               La Quetzalteca
             </span>
