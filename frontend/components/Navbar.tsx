@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, MapPin, Phone } from 'lucide-react';
+import { Menu, X, MapPin, Phone, Globe } from 'lucide-react';
+import { useLang } from '../context/LangContext';
 import { BUSINESS_INFO } from '../data/content';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { lang, toggle, t } = useLang();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,10 +17,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Inicio', href: '#home' },
-    { name: 'Menú', href: '#menu' },
-    { name: 'Nosotros', href: '#about' },
-    { name: 'Ubicación', href: '#location' },
+    { name: t.nav.home, href: '#home' },
+    { name: t.nav.menu, href: '#menu' },
+    { name: t.nav.about, href: '#about' },
+    { name: t.nav.location, href: '#location' },
   ];
 
   return (
@@ -29,7 +31,6 @@ const Navbar: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">
             <img src="/la-quetzalteca/images/1.png" alt="La Quetzalteca Logo" className="w-10 h-10 rounded-full object-cover" />
             <span className={`font-display font-bold text-2xl tracking-tight ${isScrolled ? 'text-brand-900' : 'text-white'}`}>
@@ -37,7 +38,6 @@ const Navbar: React.FC = () => {
             </span>
           </a>
 
-          {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
@@ -50,26 +50,43 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
+            <button
+              onClick={toggle}
+              className={`flex items-center gap-1 px-3 py-1.5 rounded-full text-sm font-medium transition-all border ${
+                isScrolled
+                  ? 'border-stone-300 text-stone-600 hover:bg-stone-100'
+                  : 'border-white/30 text-white hover:bg-white/10'
+              }`}
+            >
+              <Globe size={16} />
+              {lang === 'es' ? 'EN' : 'ES'}
+            </button>
             <a 
               href="#location"
               className="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2 rounded-full font-medium transition-colors flex items-center gap-2"
             >
               <MapPin size={18} />
-              Visítanos
+              {t.nav.visit}
             </a>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button 
-            className={`md:hidden p-2 rounded-md ${isScrolled ? 'text-stone-900' : 'text-white'}`}
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              onClick={toggle}
+              className={`p-2 rounded-md ${isScrolled ? 'text-stone-900' : 'text-white'}`}
+            >
+              <Globe size={20} />
+            </button>
+            <button 
+              className={`p-2 rounded-md ${isScrolled ? 'text-stone-900' : 'text-white'}`}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
-      {/* Mobile Nav */}
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-stone-100">
           <div className="px-4 pt-2 pb-6 space-y-1 flex flex-col">
