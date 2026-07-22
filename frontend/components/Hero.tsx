@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
     <section id="home" className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img 
-          src="/la-quetzalteca/images/2.png" 
+          src="/images/2.png" 
           alt="Comida tradicional de La Quetzalteca"
           className="w-full h-full object-cover object-center"
         />
