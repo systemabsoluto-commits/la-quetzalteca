@@ -50,14 +50,14 @@ export const MENU_ITEMS: MenuItem[] = [
     id: 't1',
     name: 'Tortillas de Maíz',
     description: 'Paquete de tortillas de maíz calientitas, hechas al instante.',
-    imageUrl: '/la-quetzalteca/images/4.png',
+    imageUrl: '/la-quetzalteca/images/2.png',
     category: 'tortillas'
   },
   {
     id: 't2',
     name: 'Tortillas de Harina',
     description: 'Suaves y perfectas para burritos o quesadillas.',
-    imageUrl: '/la-quetzalteca/images/5.png',
+    imageUrl: '/la-quetzalteca/images/3.png',
     category: 'tortillas'
   },
   // Panaderia

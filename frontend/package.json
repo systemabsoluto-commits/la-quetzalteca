@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "lucide-react": "latest"
+    "sharp-cli": "^5.2.0"
   },
   "devDependencies": {
     "@types/node": "latest",
